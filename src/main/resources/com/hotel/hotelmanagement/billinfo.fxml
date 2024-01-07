@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.hotelmanagement.BillInfoController">
+   <children>
+      <Label layoutX="203.0" layoutY="34.0" text="Détails" textFill="#23d452">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="roomNumber" layoutX="180.0" layoutY="115.0" prefHeight="25.0" prefWidth="250.0" promptText="Numéro chambre" />
+      <TextField fx:id="customerName" layoutX="180.0" layoutY="185.0" prefHeight="25.0" prefWidth="250.0" promptText="Nom Client" />
+      <TextField fx:id="Amount" layoutX="180.0" layoutY="325.0" prefHeight="25.0" prefWidth="250.0" promptText="Total (en MAD)" />
+      <Button fx:id="print" layoutX="270.0" layoutY="390.0" mnemonicParsing="false" onAction="#handlePrintAction" style="-fx-background-color: #2196f3;" text="Imprimer Facture" textFill="WHITE" />
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="144.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-user-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="144.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-expensive-price-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="144.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-numbers-input-form-24.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="305.0" layoutY="34.0" text=" Facture" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerIDNumber" layoutX="180.0" layoutY="255.0" prefHeight="25.0" prefWidth="250.0" promptText="ID Client" />
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="144.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-bed-24.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

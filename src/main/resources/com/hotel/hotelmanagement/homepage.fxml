@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.hotelmanagement.HomePageController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="125.0" prefWidth="1000.0" style="-fx-background-color: #24bd40;">
+         <children>
+            <Label layoutX="137.0" layoutY="39.0" text="HospitalityHub" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logout" fitHeight="60.0" fitWidth="60.0" layoutX="904.0" layoutY="33.0" onMouseClicked="#handleLogout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/icons8-logout-60.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="728.0" layoutY="30.0" prefHeight="66.0" prefWidth="153.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="53.0" layoutX="32.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/usericon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="adminName" layoutX="94.0" layoutY="20.0" text="Admin" textFill="#4c587c">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="125.0" prefHeight="675.0" prefWidth="280.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="room" alignment="BASELINE_LEFT" layoutY="150.0" mnemonicParsing="false" onAction="#createRoom" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #ffffff;" text="          Rooms">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/icons/bed_FILL0_wght400_GRAD0_opsz24%20(2).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="checkin" alignment="BASELINE_LEFT" layoutY="240.0" mnemonicParsing="false" onAction="#createCheckIn" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #ffffff;" text="          Clients">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/icons/face_FILL0_wght400_GRAD0_opsz24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="checkout" alignment="BASELINE_LEFT" layoutY="330.0" mnemonicParsing="false" onAction="#createCheckOut" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #ffffff;" text="         Reservation">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/icons/calendar_month_FILL0_wght400_GRAD0_opsz24%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bill" alignment="BASELINE_LEFT" layoutY="420.0" mnemonicParsing="false" onAction="#createCustomerBill" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #ffffff;" text="         Factures">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/icons/receipt_long_FILL0_wght400_GRAD0_opsz24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="dash" alignment="BASELINE_LEFT" layoutY="60.0" mnemonicParsing="false" onAction="#createDash" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #ffffff;" text="          Dashboard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/icons/bar_chart_4_bars_FILL0_wght400_GRAD0_opsz24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="holdPane" layoutX="280.0" layoutY="124.0" prefHeight="675.0" prefWidth="720.0" style="-fx-background-color: #F0F7F7;" />
+   </children>
+</AnchorPane>
